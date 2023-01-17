@@ -7,6 +7,18 @@ const createBtn = document.querySelector("button[data-create]");
 const destroyBtn = document.querySelector("button[data-destroy]");
 const boxes = document.querySelector("#boxes");
 
+// const refs = {
+  // input: document.querySelector("#controls input"),
+  // createBtn: document.querySelector("button[data-create]"),
+  // і т.д.
+//}
+
+// тоді коли я хочу напр. хочу повішати слухача:
+// refs.createBtn.addEventListener("click", () => createBoxes(inputEl.value));
+
+// + посилання ВИДІЛЯЮТЬСЯ на фоні іншого і їх легше знайти
+// - весь час потрібно звертатись через refs.
+
 createBtn.addEventListener("click", () => createBoxes(inputEl.value));
 destroyBtn.addEventListener("click", destroyBoxes);
 
